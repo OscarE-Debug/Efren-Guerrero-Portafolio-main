@@ -1,0 +1,47 @@
+// *General styles
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.disclaimer {
+  display: none !important;
+}
+
+@mixin textPColor {
+  padding: 10px;
+  color: rgb(37, 37, 37);
+}
+
+@mixin fontSizeGeneral {
+  font-size: 1.4em;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  width: 80%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.title {
+  @include textPColor();
+  font-size: 2.5em;
+}
+
+.text {
+  @include fontSizeGeneral();
+  @include textPColor();
+}
+
+article {
+  margin: 10px;
+}
+
+@import "navbar";

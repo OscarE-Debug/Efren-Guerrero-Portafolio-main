@@ -1,0 +1,261 @@
+// *Articles
+
+.articles {
+  background-color: rgb(233, 233, 233);
+  padding: 10px;
+}
+
+// *Article 1
+
+#about-me {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-around;
+}
+
+.decoration-image {
+  width: 40%;
+  height: 400px;
+  min-width: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  flex-shrink: 0.5;
+  margin: 10px;
+}
+
+.description-about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  min-width: 500px;
+}
+
+// *Article 2
+
+.description-services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.title-3 {
+  flex-shrink: 0;
+  margin: auto;
+  min-width: 240px;
+  width: 30%;
+}
+
+.text-2 {
+  width: 70%;
+  min-width: 666px;
+}
+
+.items-services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.items-services .item {
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  margin: 10px;
+  min-width: 300px;
+}
+
+.image-services {
+  width: 100%;
+  object-fit: contain;
+  max-width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.text-card-item {
+  text-align: center;
+}
+
+// *Article 3
+
+#portfolio {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.web-templates {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.item-web-templates {
+  max-width: 400px;
+  min-width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  height: 200px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.card-info {
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.card-info p {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border-radius: 4px;
+}
+
+.item-card {
+  margin: 5px;
+}
+
+button.item-card {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  background-color: rgb(71, 59, 177);
+  transition: background 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+button.item-card:hover {
+  background-color: rgb(63, 52, 157);
+}
+
+.image-portfolio {
+  width: 100%;
+  margin: 10px;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.zoom {
+  transform: scale(1.2);
+}
+
+.overlay {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+
+.overlay.active {
+  display: flex;
+  opacity: 1;
+  animation: entranceOverlay 0.5s ease-in-out forwards;
+}
+
+.items-overlay {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
+}
+
+@keyframes entranceOverlay {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.image-overlay {
+  width: 100%;
+  border-radius: 10px;
+  margin: 10px 0px;
+}
+
+.text-overlay {
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.bi-x-circle {
+  cursor: pointer;
+  color: #fff;
+  padding: 10px 0px;
+}
+
+.overlay.removing-overlay {
+  animation: removingOverlay 0.3s ease-in-out forwards;
+}
+
+@keyframes removingOverlay {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.my-knowledge {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.images-knowledge {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.image-knowledge {
+  width: 30%;
+  object-fit: contain;
+  max-width: 200px;
+  min-width: 100px;
+  margin: 10px;
+}
+
+#contact-me {
+  display: flex;
+  justify-content: center;
+}
+
+#contact-me p {
+  font-size: 2em;
+  font-weight: 600;
+  padding: 25px;
+}
+
+@import "footer";

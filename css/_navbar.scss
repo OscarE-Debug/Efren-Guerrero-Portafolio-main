@@ -1,0 +1,113 @@
+// *Navigation
+
+.navigation {
+  background-color: rgb(232, 236, 243);
+  min-height: 72px;
+  padding: 10px;
+}
+
+.container-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbrand-logo {
+  @include textPColor;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+.mobile-links {
+  display: none;
+  align-items: center;
+  position: absolute;
+  top: 72px;
+  width: 100%;
+  padding: 10px;
+  left: -100%;
+  background-color: rgb(232, 236, 243);
+  justify-content: center;
+  border-top: 1px solid rgb(177, 177, 177);
+  z-index: 1;
+}
+
+.mobile-links.active {
+  display: flex;
+  animation: entranceLinks 1s ease-in-out forwards;
+  left: 0;
+}
+
+.orientation-mobile {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  position: relative;
+  width: 80%;
+  max-width: 1000px;
+}
+
+.orientation-desktop {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.link-nav {
+  @include textPColor;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+  font-size: 1.2em;
+  display: block;
+}
+
+.bi {
+  font-size: 1.4em;
+}
+
+.link-nav:hover {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+.bi-list {
+  cursor: pointer;
+}
+
+.bi-list.inactive {
+  display: none;
+}
+
+.bi-x {
+  display: none;
+  cursor: pointer;
+}
+
+.bi-x.active {
+  display: block;
+}
+
+
+.mobile-links.removing-links {
+  animation: removingLinks 1s ease-in-out forwards;
+}
+
+@keyframes entranceLinks {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+@keyframes removingLinks {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+@import "hero";

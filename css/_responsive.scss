@@ -1,0 +1,84 @@
+// *Responsive */
+
+@media screen and (max-width: 1235px) {
+  .title-3 {
+    width: 100%;
+    min-width: 100%;
+  }
+  .text-2 {
+    width: 100%;
+    min-width: 100%;
+  }
+}
+
+@media screen and (max-width: 1195px) {
+  .description-about-me {
+    min-width: 100%;
+    width: 100%;
+  }
+  .decoration-image {
+    min-width: 100%;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1094px) {
+  .image-portfolio {
+    max-width: 100%;
+    min-width: none;
+  }
+}
+
+@media screen and (min-width: 1051px) {
+  .bi-list {
+    display: none;
+  }
+  .bi-x.active {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  #contact-me {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 835px){
+  .items-overlay {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 794px) {
+  .items-services .item {
+    width: 100%;
+    min-width: 100%;
+    margin: 20px 0px;
+    justify-content: center;
+  }
+  .text {
+    text-align: justify;
+  }
+  .text-card-item {
+    font-size: 2em;
+    text-align: center;
+  }
+
+}
+
+@media screen and (max-width: 390px) {
+  .title-6 {
+    font-size: 1.7em;
+  }
+}
+
+// *Scrollbar
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(37, 37, 37);
+}

@@ -1,0 +1,36 @@
+.text {
+  padding: 20px;
+  text-align: justify;
+  margin: 20px 0;
+  background: rgb(243, 243, 243);
+}
+
+.contents-location {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.image-chef {
+  width: 100%;
+  padding: 20px;
+  border-radius: 23px;
+  margin: auto;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-saucer {
+  width: 100%;
+  padding: 20px;
+  border-radius: 23px;
+  margin: auto;
+  height: 100%;
+  object-fit: cover;
+}
+
+.general-subtitle {
+  font-size: 2.92rem;
+}
+
+@import "menu-styles";
+@import "responsive";

@@ -1,0 +1,26 @@
+// *Footer
+
+.section-footer {
+  background-color: rgb(37, 37, 37);
+  padding: 10px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.text-footer {
+  color: #fff;
+  padding: 10px;
+  font-size: 1.2em;
+}
+
+.link-footer {
+  color: #fff;
+  padding: 10px;
+  font-size: 1.2em;
+}
+
+@import "responsive";

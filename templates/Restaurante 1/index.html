@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sass/materialize.min.css">
+    <link rel="stylesheet" href="sass/styles.css">
+    <link rel="stylesheet" href="sass/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Raleway:500,600&display=swap" rel="stylesheet">
+    <script src="js/main.js" defer></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <title>Restaurante numero uno de México</title>
+</head>
+
+<body>
+
+    <div class="parallax-container" id="inicio">
+        <h1 class="title title-1" id="title-1">¡Bienvenido!</h1>
+        <div class="parallax"><img class="parallax-image" src="images/restaurant.jpg"></div>
+    </div>
+
+    <header>
+        <nav class="navigation blue darken-2">
+            <div class="nav-wrapper">
+                <div class="container">
+                    <a href="#" class="brand-logo">Logo</a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#conocenos">Conocenos</a></li>
+                        <li><a href="#menu">Nuestro menu</a></li>
+                        <li><a href="#reservacion">Realiza una reservación</a></li>
+                    </ul>
+                    <ul id="slide-out" class="sidenav blue darken-2">
+                        <li>
+                            <a href="#inicio">
+                                Inicio <i class="bi bi-house"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#conocenos">
+                                Conocenos <i class="bi bi-search"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#menu">
+                                Nuestro menu <i class="bi bi-wallet2"></i></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#reservacion">
+                                Realiza una reservación <i class="bi bi-calendar-check"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="bi bi-list"></i></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <article>
+        <div class="container">
+            <h2 class="title title-2 center-align" id="conocenos">~ Nuestro restaurante ~</h2>
+            <div class="contents-location">
+                <div class="location">
+                    <h3 class="title title-location">Nuestro local:</h3>
+                    <p class="text text-1">
+                        Gracias por visitarnos. Somos el restaurante numero 1 en la Ciudad de México, siendo el unico y
+                        autentico, sirviendo deliciosa cocina gourmet cocinada por los mejores chefs. Solo toma unos
+                        minutos navegar a través de nuestro sitio web y ver nuestro menú. Esperamos que pronto se una a
+                        nosotros para disfrutar de una excelente experiencia culinaria.
+                    </p>
+                    <h3 class="title general-subtitle">Una experiencia unica:</h3>
+                    <p class="text text-2">
+                        Gracias por visitarnos. Somos el restaurante numero 1 en la Ciudad de México, siendo el unico y
+                        autentico, sirviendo deliciosa cocina gourmet cocinada por los mejores chefs. Solo toma unos
+                        minutos navegar a través de nuestro sitio web y ver nuestro menú. Esperamos que pronto se una a
+                        nosotros para disfrutar de una excelente experiencia culinaria.
+                    </p>
+                </div>
+                <img class="image-chef" src="images/chef.jpg" alt="chef cocinando">
+                <img class="image-saucer" src="images/platillos.jpg" alt="especias en una mesa">
+                <div class="ingredients">
+                    <h3 class="title general-subtitle">Preparado con los mejores ingredientes:</h3>
+                    <p class="text text-3">
+                        Gracias por visitarnos. Somos el restaurante numero 1 en la Ciudad de México, siendo el unico y
+                        autentico, sirviendo deliciosa cocina gourmet cocinada por los mejores chefs. Solo toma unos
+                        minutos navegar a través de nuestro sitio web y ver nuestro menú. Esperamos que pronto se una a
+                        nosotros para disfrutar de una excelente experiencia culinaria.
+                    </p>
+                    <h3 class="title general-subtitle">Nuestro compromiso con nuestros clientes:</h3>
+                    <p class="text text-3">
+                        Gracias por visitarnos. Somos el restaurante numero 1 en la Ciudad de México, siendo el unico y
+                        autentico, sirviendo deliciosa cocina gourmet cocinada por los mejores chefs. Solo toma unos
+                        minutos navegar a través de nuestro sitio web y ver nuestro menú. Esperamos que pronto se una a
+                        nosotros para disfrutar de una excelente experiencia culinaria.
+                    </p>
+                </div>
+            </div>
+            <div class="menu-container" id="menu">
+                <h4 class="title general-subtitle center-align">Nuestros menus:</h4>
+                <div class="carousel center-align">
+                    <div class="carousel-item" data-target="images/risotto_menu.jpg" data-menu="menu-item-1">
+                        <img src="images/risotto.jpg" alt="risotto gourmet" class="image-menu">
+                        <div class="description">
+                            <h4 class="title title-4">Menu cocina italiana <a class="btn" id="button">Ver menu</a></h4>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-target="images/quiche_menu.jpg" data-menu="menu-item-2">
+                        <img src="images/quiche.jpg" alt="quiche gourmet" class="image-menu">
+                        <div class="description">
+                            <h4 class="title title-4">Menu cocina francesa <a class="btn" id="button">Ver menu</a></h4>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-target="images/hamburger_menu.jpg" data-menu="menu-item-3">
+                        <img src="images/hamburger.jpg" alt="hamburger gourmet" class="image-menu">
+                        <div class="description">
+                            <h4 class="title title-4">Menu comida Americana <a class="btn" id="button">Ver menu</a></h4>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-target="images/burrito_menu.jpg" data-menu="menu-item-4">
+                        <img src="images/burrito.jpg" alt="burrito gourmet" class="image-menu">
+                        <div class="description">
+                            <h4 class="title title-4">Menu comida mexicana <a class="btn" id="button">Ver menu</a></h4>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-target="images/bruschetta_menu.jpg" data-menu="menu-item-5">
+                        <img src="images/bruschetta.jpg" alt="bruschetta gourmet" class="image-menu">
+                        <div class="description">
+                            <h4 class="title title-4">Menu comida romana <a class="btn" id="button">Ver menu</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="overlay">
+                    <div class="container-all-list">
+                        <i class="bi bi-x" id="close-button"></i>
+                        <img src="" alt="platillo del menu" class="image-overlay">
+                        <div class="row description-menu menu-item-1">
+                            <div class="col s12" id="first-col">
+                                <h5 class="title title-5">Menu italiano</h5>
+                                <div class="col s12">
+                                    <hr class="division">
+                                </div>
+                            </div>
+                            <div class="col s6">Risotto</div>
+                            <div class="col s6">Burrito</div>
+                            <div class="col s6">Risotto</div>
+                            <div class="col s6">Burrito</div>
+                            <div class="col s6">Risotto</div>
+                            <div class="col s6">Burrito</div>
+                            <div class="col s6">Risotto</div>
+                            <div class="col s6">Burrito</div>
+                        </div>
+                        <div class="row description-menu menu-item-2">
+                            <div class="col s12" id="first-col">
+                                <h5 class="title title-5">Menu frances</h5>
+                                <div class="col s12">
+                                    <hr class="division">
+                                </div>
+                            </div>
+                            <div class="col s6">Risotto</div>
+                            <div class="col s6">Burrito</div>
+                            <div class="col s6">Risotto</div>
+                            <div class="col s6">Burrito</div>
+                            <div class="col s6">Risotto</div>
+                            <div class="col s6">Burrito</div>
+                            <div class="col s6">Risotto</div>
+                            <div class="col s6">Burrito</div>
+                        </div>
+                        <div class="row description-menu menu-item-3">
+                            <div class="col s12" id="first-col">
+                                <h5 class="title title-5">Menu americano</h5>
+                                <div class="col s12">
+                                    <hr class="division">
+                                </div>
+                            </div>
+                            <div class="col s6">Risotto</div>
+                            <div class="col s6">Burrito</div>
+                            <div class="col s6">Risotto</div>
+                            <div class="col s6">Burrito</div>
+                            <div class="col s6">Risotto</div>
+                            <div class="col s6">Burrito</div>
+                            <div class="col s6">Risotto</div>
+                            <div class="col s6">Burrito</div>
+                        </div>
+                        <div class="row description-menu menu-item-4">
+                            <div class="col s12" id="first-col">
+                                <h5 class="title title-5">Menu mexicano</h5>
+                                <div class="col s12">
+                                    <hr class="division">
+                                </div>
+                            </div>
+                            <div class="col s6">Risotto</div>
+                            <div class="col s6">Burrito</div>
+                            <div class="col s6">Risotto</div>
+                            <div class="col s6">Burrito</div>
+                            <div class="col s6">Risotto</div>
+                            <div class="col s6">Burrito</div>
+                            <div class="col s6">Risotto</div>
+                            <div class="col s6">Burrito</div>
+                        </div>
+                        <div class="row description-menu menu-item-5">
+                            <div class="col s12" id="first-col">
+                                <h5 class="title title-5">Menu romano</h5>
+                                <div class="col s12">
+                                    <hr class="division">
+                                </div>
+                            </div>
+                            <div class="col s6">Risotto</div>
+                            <div class="col s6">Burrito</div>
+                            <div class="col s6">Risotto</div>
+                            <div class="col s6">Burrito</div>
+                            <div class="col s6">Risotto</div>
+                            <div class="col s6">Burrito</div>
+                            <div class="col s6">Risotto</div>
+                            <div class="col s6">Burrito</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="reservation" id="reservacion">
+                <h6 class="title general-subtitle center-align">
+                    ¡Realiza una reservación ya!
+                </h6>
+                <div class="container-reservation">
+                    <div class="hour-hand">
+                        <div class="hours">
+                            <p class="morning-hours">08:00am - 11:50am</p>
+                            <p class="evening-hours">11:50am - 6:00pm</p>
+                            <p class="night-hours">6:00pm - 10:00pm</p>
+                        </div>
+                        <img src="images/reservation.jpg" alt="reservation restaurant pancakes"
+                            class="image-reservation">
+                    </div>
+                </div>
+                <form action="" class="reservation-form">
+                    <p class="center-align reservation-title">Realiza tu reservación aqui:</p>
+                    <p class="text reservation-paragraph">Fecha de reservación:</p>
+                    <input type="date" class="date-reservation">
+                    <p class="text reservation-paragraph">Nombre de quien desea reservar:</p>
+                    <input type="text" placeholder="Introduce tu nombre" class="date-reservation">
+                    <p class="text reservation-paragraph">Horario en el que desea reservar:</p>
+                    <div class="input-field date-reservation">
+                        <select>
+                            <option value="0" disabled selected>Seleccione su opción</option>
+                            <option value="1">Horario matutino (8:00am - 11:50am)</option>
+                            <option value="2">Horario vespertino (11:50am - 6:00pm)</option>
+                            <option value="3">Horario nocturno (6:00pm - 10:00pm)</option>
+                        </select>
+                        <label>Seleccione la opción que mas le guste</label>
+                    </div>
+                    <button class="blue darken-2 waves-effect waves-light btn">Pedir reservación</button>
+                </form>
+            </div>
+        </div>
+    </article>
+
+    <footer class="page-footer blue darken-2">
+        <div class="container" id="social-networks">
+            <h5 class="white-text">¡Siguenos en nuestras redes!</h5>
+            <a href="#" class="grey-text text-lighten-4"><i class="bi bi-facebook"></i> Facebook</a>
+            <a href="#" class="grey-text text-lighten-4"><i class="bi bi-instagram"></i> Instagram</a>
+            <a href="#" class="grey-text text-lighten-4"><i class="bi bi-twitter"></i> Twitter</a>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                <p class="grey-text text-lighten-4 left">&#169: 2022 Copyright Text</p>
+                <a class="grey-text text-lighten-4 right" href="#inicio">¡Gracias por visitarnos!</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
